@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+}
+
+.app {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tarea-form { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+.tarea-form input { padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+.tarea-form button {
+  padding: 8px; background-color: #2563eb; color: white;
+  border: none; border-radius: 6px; cursor: pointer;
+}
+
+.tarea-list { list-style: none; padding: 0; }
+.tarea-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;
+}
+.tarea-item.completada strong { text-decoration: line-through; color: #9ca3af; }
+.tarea-item button {
+  background-color: #ef4444; color: white; border: none;
+  padding: 6px 10px; border-radius: 6px; cursor: pointer;
+}
+
+.vacio { color: #6b7280; text-align: center; }
